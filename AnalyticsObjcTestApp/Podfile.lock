@@ -1,0 +1,16 @@
+PODS:
+  - Analytics (3.5.4)
+
+DEPENDENCIES:
+  - Analytics (from `../../analytics-ios`)
+
+EXTERNAL SOURCES:
+  Analytics:
+    :path: "../../analytics-ios"
+
+SPEC CHECKSUMS:
+  Analytics: b462a87eb6e3609e5fb38416117b58011aa57ff8
+
+PODFILE CHECKSUM: 0a14f8712c3390fb1e7d24644fb7f17a41a752f9
+
+COCOAPODS: 1.1.0

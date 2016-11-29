@@ -1,0 +1,8 @@
+use_frameworks!
+
+target 'AnalyticsObjcTestApp' do
+  pod 'Analytics', :path => '../../analytics-ios'
+end
+
+
+
