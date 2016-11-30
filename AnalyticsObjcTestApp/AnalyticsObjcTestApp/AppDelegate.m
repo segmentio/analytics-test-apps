@@ -8,7 +8,6 @@
 
 #import "AppDelegate.h"
 #import <Analytics/SEGAnalytics.h>
-#import <Segment-GoogleAnalytics/SEGGoogleAnalyticsIntegrationFactory.h>
 #import <Segment-Mixpanel/SEGMixpanelIntegrationFactory.h>
 
 @interface AppDelegate ()
@@ -25,7 +24,6 @@
     config.trackApplicationLifecycleEvents = YES;
     config.recordScreenViews = YES;
     
-    [config use:[SEGGoogleAnalyticsIntegrationFactory instance]];
     [config use:[SEGMixpanelIntegrationFactory instance]];
     [SEGAnalytics setupWithConfiguration:config];
     [SEGAnalytics debug:YES];
