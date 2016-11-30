@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1740D758520B85C20BC74513 /* Pods_AnalyticsObjcTestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96EB9C4A9CBFF54C1581F362 /* Pods_AnalyticsObjcTestApp.framework */; };
+		44610E988A425A00759BF81F /* libPods-AnalyticsObjcTestApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DE23543AFD637CDDD52DF3F /* libPods-AnalyticsObjcTestApp.a */; };
 		EADEB9411DED4ADB005322DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EADEB9401DED4ADB005322DA /* main.m */; };
 		EADEB9441DED4ADB005322DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EADEB9431DED4ADB005322DA /* AppDelegate.m */; };
 		EADEB9471DED4ADB005322DA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EADEB9461DED4ADB005322DA /* ViewController.m */; };
@@ -17,9 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0DE23543AFD637CDDD52DF3F /* libPods-AnalyticsObjcTestApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AnalyticsObjcTestApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D3012B9A1EBF96F8BC79009 /* Pods-AnalyticsObjcTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnalyticsObjcTestApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnalyticsObjcTestApp/Pods-AnalyticsObjcTestApp.debug.xcconfig"; sourceTree = "<group>"; };
 		47F4942FD6B7E7EA9E9D6CDA /* Pods-AnalyticsObjcTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnalyticsObjcTestApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnalyticsObjcTestApp/Pods-AnalyticsObjcTestApp.release.xcconfig"; sourceTree = "<group>"; };
-		96EB9C4A9CBFF54C1581F362 /* Pods_AnalyticsObjcTestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnalyticsObjcTestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EADEB93C1DED4ADB005322DA /* AnalyticsObjcTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnalyticsObjcTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EADEB9401DED4ADB005322DA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EADEB9421DED4ADB005322DA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -37,7 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1740D758520B85C20BC74513 /* Pods_AnalyticsObjcTestApp.framework in Frameworks */,
+				44610E988A425A00759BF81F /* libPods-AnalyticsObjcTestApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,7 +56,7 @@
 		B4BFD39962BDEE3114C50DF3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				96EB9C4A9CBFF54C1581F362 /* Pods_AnalyticsObjcTestApp.framework */,
+				0DE23543AFD637CDDD52DF3F /* libPods-AnalyticsObjcTestApp.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -271,6 +271,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -318,6 +319,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -346,6 +348,7 @@
 			baseConfigurationReference = 3D3012B9A1EBF96F8BC79009 /* Pods-AnalyticsObjcTestApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = AnalyticsObjcTestApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.segment.AnalyticsObjcTestApp;
@@ -358,6 +361,7 @@
 			baseConfigurationReference = 47F4942FD6B7E7EA9E9D6CDA /* Pods-AnalyticsObjcTestApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = AnalyticsObjcTestApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.segment.AnalyticsObjcTestApp;
