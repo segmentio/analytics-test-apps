@@ -26,9 +26,20 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+- (IBAction)aliasEvent {
+    
+    [[SEGAnalytics sharedAnalytics] alias:@"V STAR 1300 DELUXE"];
+}
+
 - (IBAction)identifyEvent {
     
     [[SEGAnalytics sharedAnalytics] identify:@"Yamaha Star V Star 250"];
+}
+
+- (IBAction)groupEvent {
+    
+    [[SEGAnalytics sharedAnalytics] group:@"Yamaha Motor Sports Co"];
 }
 
 - (IBAction)eventOne {
