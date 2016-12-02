@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -50,11 +51,20 @@
                                     <action selector="screenHome:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MNz-yV-PWt"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Segment_stacked_2C_reverse_RGB_rgb_600_397" translatesAutoresizingMaskIntoConstraints="NO" id="fNM-s2-L4B">
+                                <rect key="frame" x="120" y="44" width="134" height="89"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="fNM-s2-L4B" secondAttribute="height" multiplier="134:89" id="ad7-sg-Ygm"/>
+                                    <constraint firstAttribute="width" constant="134" id="j3l-gt-aIc"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.19607843137254902" green="0.65490196078431373" blue="0.36470588235294116" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="FaD-au-x3w" firstAttribute="top" secondItem="H4m-vo-uXq" secondAttribute="bottom" constant="29" id="1ZI-gw-Sej"/>
+                            <constraint firstItem="fNM-s2-L4B" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="24" id="47J-Vm-1nF"/>
                             <constraint firstItem="H4m-vo-uXq" firstAttribute="top" secondItem="Gmv-3P-MEa" secondAttribute="bottom" constant="28" id="cuU-XW-bcc"/>
+                            <constraint firstItem="fNM-s2-L4B" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dqd-Im-pUF"/>
                             <constraint firstItem="FaD-au-x3w" firstAttribute="centerX" secondItem="H4m-vo-uXq" secondAttribute="centerX" id="elY-tz-IcV"/>
                             <constraint firstItem="Gmv-3P-MEa" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="148" id="my1-ka-M31"/>
                             <constraint firstItem="H4m-vo-uXq" firstAttribute="centerX" secondItem="Gmv-3P-MEa" secondAttribute="centerX" id="pfN-ya-BCK"/>
@@ -64,6 +74,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Segment_stacked_2C_reverse_RGB_rgb_600_397" width="599" height="397"/>
+    </resources>
 </document>
