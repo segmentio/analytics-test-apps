@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "61E79CE38DEBEC786B7F10BAA0891C10995933F0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "2FBF6FF867B676467411255C927B9FD8739B9AC2" : 9223372036854775807,
+    "61E79CE38DEBEC786B7F10BAA0891C10995933F0" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "7A95C405-3CB0-4A15-9E27-E6333D7D2B28",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "2FBF6FF867B676467411255C927B9FD8739B9AC2" : "analytics-ios\/",
+    "61E79CE38DEBEC786B7F10BAA0891C10995933F0" : "analytics-test-apps\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "AnalyticsIOSTestApp",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "AnalyticsIOSTestApp\/AnalyticsIOSTestApp.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:segmentio\/analytics-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2FBF6FF867B676467411255C927B9FD8739B9AC2"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:segmentio\/analytics-test-apps.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "61E79CE38DEBEC786B7F10BAA0891C10995933F0"
+    }
+  ]
+}

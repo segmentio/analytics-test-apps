@@ -1,0 +1,1 @@
+../../../../../../analytics-ios/Analytics/Classes/Internal/SEGHTTPClient.h
