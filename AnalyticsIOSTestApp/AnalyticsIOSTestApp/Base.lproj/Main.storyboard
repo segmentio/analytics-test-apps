@@ -37,7 +37,6 @@
                                     <color key="titleColor" red="0.98432320356369019" green="0.98051029443740845" blue="0.97614568471908569" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="screenHome:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pks-VY-fho"/>
                                     <action selector="trackOrderCompleted:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tzb-Nh-bPP"/>
                                 </connections>
                             </button>
@@ -48,7 +47,6 @@
                                 </state>
                                 <connections>
                                     <action selector="flush:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tmi-HH-YYP"/>
-                                    <action selector="screenHome:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MNz-yV-PWt"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Segment_stacked_2C_reverse_RGB_rgb_600_397" translatesAutoresizingMaskIntoConstraints="NO" id="fNM-s2-L4B">
