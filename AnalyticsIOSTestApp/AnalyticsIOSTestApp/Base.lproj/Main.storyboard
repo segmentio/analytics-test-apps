@@ -56,14 +56,25 @@
                                     <constraint firstAttribute="width" constant="134" id="j3l-gt-aIc"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="61k-kz-KmJ">
+                                <rect key="frame" x="125" y="341" width="126" height="30"/>
+                                <state key="normal" title="Track: Pizza Eaten">
+                                    <color key="titleColor" red="0.98432320356369019" green="0.98051029443740845" blue="0.97614568471908569" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="pizzaEaten:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ao7-iI-6fD"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.19607843137254902" green="0.65490196078431373" blue="0.36470588235294116" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="FaD-au-x3w" firstAttribute="top" secondItem="H4m-vo-uXq" secondAttribute="bottom" constant="29" id="1ZI-gw-Sej"/>
                             <constraint firstItem="fNM-s2-L4B" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="24" id="47J-Vm-1nF"/>
+                            <constraint firstItem="61k-kz-KmJ" firstAttribute="top" secondItem="FaD-au-x3w" secondAttribute="bottom" constant="26" id="PUR-JC-rGA"/>
                             <constraint firstItem="H4m-vo-uXq" firstAttribute="top" secondItem="Gmv-3P-MEa" secondAttribute="bottom" constant="28" id="cuU-XW-bcc"/>
                             <constraint firstItem="fNM-s2-L4B" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dqd-Im-pUF"/>
                             <constraint firstItem="FaD-au-x3w" firstAttribute="centerX" secondItem="H4m-vo-uXq" secondAttribute="centerX" id="elY-tz-IcV"/>
+                            <constraint firstItem="61k-kz-KmJ" firstAttribute="centerX" secondItem="FaD-au-x3w" secondAttribute="centerX" id="fn5-Gn-MHh"/>
                             <constraint firstItem="Gmv-3P-MEa" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="148" id="my1-ka-M31"/>
                             <constraint firstItem="H4m-vo-uXq" firstAttribute="centerX" secondItem="Gmv-3P-MEa" secondAttribute="centerX" id="pfN-ya-BCK"/>
                             <constraint firstItem="Gmv-3P-MEa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="x9g-cr-zWY"/>

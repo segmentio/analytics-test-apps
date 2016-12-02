@@ -14,10 +14,6 @@ class ViewController: UIViewController {
         return .lightContent
     }
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-
     @IBAction func screenHome(_ sender: Any) {
         SEGAnalytics.shared().screen("Home")
     }
@@ -30,4 +26,7 @@ class ViewController: UIViewController {
         SEGAnalytics.shared().flush()
     }
     
+    @IBAction func pizzaEaten(_ sender: Any) {
+        SEGAnalytics.shared().track("Pizza Eaten")
+    }
 }

@@ -12,6 +12,8 @@
 		EAEABB9E1DF2174A002220BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAEABB9C1DF2174A002220BB /* Main.storyboard */; };
 		EAEABBA01DF2174A002220BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAEABB9F1DF2174A002220BB /* Assets.xcassets */; };
 		EAEABBA31DF2174A002220BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAEABBA11DF2174A002220BB /* LaunchScreen.storyboard */; };
+		EAEABBAD1DF23736002220BB /* CustomMiddlewares.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEABBAC1DF23736002220BB /* CustomMiddlewares.swift */; };
+		EAEABBAF1DF23BA9002220BB /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEABBAE1DF23BA9002220BB /* Helpers.swift */; };
 		F3ED652F17CE5B4A448DAE13 /* libPods-AnalyticsIOSTestApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 47B18887D4A71EE1F0B1523B /* libPods-AnalyticsIOSTestApp.a */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +28,8 @@
 		EAEABBA21DF2174A002220BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EAEABBA41DF2174A002220BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EAEABBAA1DF21795002220BB /* AnalyticsIOSTestApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AnalyticsIOSTestApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		EAEABBAC1DF23736002220BB /* CustomMiddlewares.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMiddlewares.swift; sourceTree = "<group>"; };
+		EAEABBAE1DF23BA9002220BB /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		F2E972C5516B833DBE426048 /* Pods-AnalyticsIOSTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnalyticsIOSTestApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnalyticsIOSTestApp/Pods-AnalyticsIOSTestApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,10 +77,12 @@
 				EAEABBAA1DF21795002220BB /* AnalyticsIOSTestApp-Bridging-Header.h */,
 				EAEABB981DF2174A002220BB /* AppDelegate.swift */,
 				EAEABB9A1DF2174A002220BB /* ViewController.swift */,
+				EAEABBAC1DF23736002220BB /* CustomMiddlewares.swift */,
 				EAEABB9C1DF2174A002220BB /* Main.storyboard */,
 				EAEABB9F1DF2174A002220BB /* Assets.xcassets */,
 				EAEABBA11DF2174A002220BB /* LaunchScreen.storyboard */,
 				EAEABBA41DF2174A002220BB /* Info.plist */,
+				EAEABBAE1DF23BA9002220BB /* Helpers.swift */,
 			);
 			path = AnalyticsIOSTestApp;
 			sourceTree = "<group>";
@@ -215,7 +221,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAEABB9B1DF2174A002220BB /* ViewController.swift in Sources */,
+				EAEABBAD1DF23736002220BB /* CustomMiddlewares.swift in Sources */,
 				EAEABB991DF2174A002220BB /* AppDelegate.swift in Sources */,
+				EAEABBAF1DF23BA9002220BB /* Helpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
