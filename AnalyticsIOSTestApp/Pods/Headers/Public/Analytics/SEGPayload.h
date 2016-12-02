@@ -1,1 +1,0 @@
-../../../../../../analytics-ios/Analytics/Classes/Integrations/SEGPayload.h
