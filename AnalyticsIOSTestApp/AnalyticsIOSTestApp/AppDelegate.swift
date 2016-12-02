@@ -25,10 +25,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             turnScreenIntoTrack,
             enforceEventTaxonomy,
             customizeTrackCall,
+            sampleEventsToMixpanel,
         ]
         
         SEGAnalytics.setup(with: config)
         SEGAnalytics.debug(true)
+
+        
         
         return true
     }

@@ -8,6 +8,7 @@
 
 import Foundation
 
+// Changing event names and adding custom attributes
 let customizeTrackCall = SEGBlockMiddleware { (context, next) in
     if context.eventType == .track {
         next(context.modify { ctx in
@@ -29,6 +30,7 @@ let customizeTrackCall = SEGBlockMiddleware { (context, next) in
     }
 }
 
+// Turn one kind call into another
 let turnScreenIntoTrack = SEGBlockMiddleware { (context, next) in
     if context.eventType == .screen {
         next(context.modify { ctx in
@@ -49,6 +51,7 @@ let turnScreenIntoTrack = SEGBlockMiddleware { (context, next) in
     }
 }
 
+// Completely block events
 let enforceEventTaxonomy = SEGBlockMiddleware { (context, next) in
     let validEvents = [
         "Application Opened",
@@ -60,6 +63,25 @@ let enforceEventTaxonomy = SEGBlockMiddleware { (context, next) in
         if !validEvents.contains(track.event) {
             showAlert(title: "Dropping Rogue Event",
                       message: track.event)
+            return
+        }
+    }
+    next(context)
+}
+
+// Sample events to Mixpanel
+let sampleEventsToMixpanel = SEGBlockMiddleware { (context, next) in
+    if let track = context.payload as? SEGTrackPayload {
+        let numberBetween0To4 = arc4random() % 5
+        if numberBetween0To4 != 0 {
+            next(context.modify { ctx in
+                ctx.payload = SEGTrackPayload(
+                    event: track.event,
+                    properties: track.properties,
+                    context: track.context,
+                    integrations: ["Mixpanel": false]
+                )
+            })
             return
         }
     }
