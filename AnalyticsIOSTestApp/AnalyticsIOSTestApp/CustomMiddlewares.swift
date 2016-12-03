@@ -9,7 +9,7 @@
 import Foundation
 
 // Changing event names and adding custom attributes
-let customizeTrackCall = SEGBlockMiddleware { (context, next) in
+let customizeAllTrackCalls = SEGBlockMiddleware { (context, next) in
     if context.eventType == .track {
         next(context.modify { ctx in
             guard let track = ctx.payload as? SEGTrackPayload else {

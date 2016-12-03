@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         config.middlewares = [
             turnScreenIntoTrack,
             enforceEventTaxonomy,
-            customizeTrackCall,
+            customizeAllTrackCalls,
             sampleEventsToMixpanel,
         ]
         
