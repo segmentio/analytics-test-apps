@@ -26,6 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             enforceEventTaxonomy,
             customizeAllTrackCalls,
             sampleEventsToMixpanel,
+            blockScreenCallsToAmplitude,
         ]
         
         SEGAnalytics.setup(with: config)

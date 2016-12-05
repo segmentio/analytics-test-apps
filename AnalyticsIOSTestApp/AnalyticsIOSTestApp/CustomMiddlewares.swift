@@ -87,3 +87,19 @@ let sampleEventsToMixpanel = SEGBlockMiddleware { (context, next) in
     }
     next(context)
 }
+
+// Block screen calls to amplitude
+let blockScreenCallsToAmplitude = SEGBlockMiddleware { (context, next) in
+    if let screen = context.payload as? SEGScreenPayload {
+        next(context.modify { ctx in
+            ctx.payload = SEGScreenPayload(
+                name: screen.name,
+                properties: screen.properties,
+                context: screen.context,
+                integrations: ["Mixpanel": false]
+            )
+        })
+        return
+    }
+    next(context)
+}
