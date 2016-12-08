@@ -96,7 +96,7 @@ let blockScreenCallsToAmplitude = SEGBlockMiddleware { (context, next) in
                 name: screen.name,
                 properties: screen.properties,
                 context: screen.context,
-                integrations: ["Mixpanel": false]
+                integrations: ["Amplitude": false]
             )
         })
         return
