@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA2BDC771E09E0A700F02E46 /* SEGKahunaIntegration.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2BDC721E09E0A700F02E46 /* SEGKahunaIntegration.m */; };
+		EA2BDC781E09E0A700F02E46 /* SEGKahunaIntegrationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2BDC741E09E0A700F02E46 /* SEGKahunaIntegrationFactory.m */; };
 		EAEABB991DF2174A002220BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEABB981DF2174A002220BB /* AppDelegate.swift */; };
 		EAEABB9B1DF2174A002220BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEABB9A1DF2174A002220BB /* ViewController.swift */; };
 		EAEABB9E1DF2174A002220BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAEABB9C1DF2174A002220BB /* Main.storyboard */; };
@@ -20,6 +22,11 @@
 /* Begin PBXFileReference section */
 		39DCE8145A74600FF3F4E419 /* Pods-AnalyticsIOSTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnalyticsIOSTestApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnalyticsIOSTestApp/Pods-AnalyticsIOSTestApp.release.xcconfig"; sourceTree = "<group>"; };
 		47B18887D4A71EE1F0B1523B /* libPods-AnalyticsIOSTestApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AnalyticsIOSTestApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA2BDC701E09E0A700F02E46 /* SEGKahunaDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEGKahunaDefines.h; sourceTree = "<group>"; };
+		EA2BDC711E09E0A700F02E46 /* SEGKahunaIntegration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEGKahunaIntegration.h; sourceTree = "<group>"; };
+		EA2BDC721E09E0A700F02E46 /* SEGKahunaIntegration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEGKahunaIntegration.m; sourceTree = "<group>"; };
+		EA2BDC731E09E0A700F02E46 /* SEGKahunaIntegrationFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEGKahunaIntegrationFactory.h; sourceTree = "<group>"; };
+		EA2BDC741E09E0A700F02E46 /* SEGKahunaIntegrationFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEGKahunaIntegrationFactory.m; sourceTree = "<group>"; };
 		EAEABB951DF2174A002220BB /* AnalyticsIOSTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnalyticsIOSTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAEABB981DF2174A002220BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAEABB9A1DF2174A002220BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,9 +55,39 @@
 		1229E2F8AEA39B89BC26884D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EA2BDC6C1E09E0A700F02E46 /* Segment-Kahuna */,
 				47B18887D4A71EE1F0B1523B /* libPods-AnalyticsIOSTestApp.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EA2BDC6C1E09E0A700F02E46 /* Segment-Kahuna */ = {
+			isa = PBXGroup;
+			children = (
+				EA2BDC6E1E09E0A700F02E46 /* Pod */,
+			);
+			name = "Segment-Kahuna";
+			path = "Pods/Segment-Kahuna";
+			sourceTree = "<group>";
+		};
+		EA2BDC6E1E09E0A700F02E46 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				EA2BDC6F1E09E0A700F02E46 /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		EA2BDC6F1E09E0A700F02E46 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EA2BDC701E09E0A700F02E46 /* SEGKahunaDefines.h */,
+				EA2BDC711E09E0A700F02E46 /* SEGKahunaIntegration.h */,
+				EA2BDC721E09E0A700F02E46 /* SEGKahunaIntegration.m */,
+				EA2BDC731E09E0A700F02E46 /* SEGKahunaIntegrationFactory.h */,
+				EA2BDC741E09E0A700F02E46 /* SEGKahunaIntegrationFactory.m */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		EAEABB8C1DF2174A002220BB = {
@@ -221,7 +258,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAEABB9B1DF2174A002220BB /* ViewController.swift in Sources */,
+				EA2BDC781E09E0A700F02E46 /* SEGKahunaIntegrationFactory.m in Sources */,
 				EAEABBAD1DF23736002220BB /* CustomMiddlewares.swift in Sources */,
+				EA2BDC771E09E0A700F02E46 /* SEGKahunaIntegration.m in Sources */,
 				EAEABB991DF2174A002220BB /* AppDelegate.swift in Sources */,
 				EAEABBAF1DF23BA9002220BB /* Helpers.swift in Sources */,
 			);

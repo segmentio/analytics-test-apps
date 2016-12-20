@@ -4,6 +4,8 @@ target 'AnalyticsIOSTestApp' do
   # pod 'Analytics', :git => 'https://github.com/segmentio/analytics-ios.git', :branch => 'dev'
   pod 'Analytics', :path => '../../analytics-ios'
   pod 'Segment-Mixpanel'
+  pod 'Segment-Kahuna/StaticLibWorkaround'
+  pod 'Kahuna'
 end
 
 

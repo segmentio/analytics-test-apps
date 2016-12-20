@@ -15,11 +15,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        let config = SEGAnalyticsConfiguration(writeKey: "H18ZaUENQGcg4t7mJnYt1XrgG5vNkULh")
+        let config = SEGAnalyticsConfiguration(writeKey: "ACIG3kwqCUsWZBfYxZDu0anuGwP3XtWW")
         config.trackApplicationLifecycleEvents = true
         config.trackDeepLinks = true
         config.recordScreenViews = true
         config.use(SEGMixpanelIntegrationFactory.instance())
+        config.use(SEGKahunaIntegrationFactory.instance() as! SEGIntegrationFactory)
 
         config.middlewares = [
             turnScreenIntoTrack,
@@ -35,6 +36,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         return true
+    }
+    
+    
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        SEGAnalytics.shared().registeredForRemoteNotifications(withDeviceToken: deviceToken)
+    }
+    
+    func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
+        SEGAnalytics.shared().failedToRegisterForRemoteNotificationsWithError(error)
+    }
+    
+    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+        SEGAnalytics.shared().receivedRemoteNotification(userInfo)
+    }
+    
+    // TODO: Update docs to use the new iOS 10 API - UNUserNotificationDelegate
+    // This is only relevant if developer implements the
+    // custom notification action handling API, which is typically rare (check medium app for example)
+    func application(_ application: UIApplication, handleActionWithIdentifier identifier: String?, forRemoteNotification userInfo: [AnyHashable : Any], withResponseInfo responseInfo: [AnyHashable : Any], completionHandler: @escaping () -> Void) {
+        SEGAnalytics.shared().handleAction(withIdentifier: identifier!, forRemoteNotification: userInfo)
     }
 
 }

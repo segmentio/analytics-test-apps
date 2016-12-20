@@ -6,3 +6,5 @@
 #import <Analytics/SEGAnalyticsConfiguration.h>
 #import <Analytics/SEGMiddleware.h>
 #import <Segment-Mixpanel/SEGMixpanelIntegrationFactory.h>
+#import "SEGKahunaIntegrationFactory.h"
+
