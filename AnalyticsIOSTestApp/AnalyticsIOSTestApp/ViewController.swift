@@ -23,6 +23,17 @@ class ViewController: UIViewController {
         SEGAnalytics.shared().track("Order Cancelled", properties: [
             "order_id": 323
         ])
+        
+        SEGAnalytics.shared().identify("userIdOnly")
+        SEGAnalytics.shared().identify("userId", traits: [
+            "age": 32,
+        ])
+        
+        SEGAnalytics.shared().alias("newlyAliasedId")
+        
+        SEGAnalytics.shared().screen("User Login Screen", properties: [
+            "method": "google",
+        ])
     }
     
     @IBAction func flush(_ sender: Any) {
