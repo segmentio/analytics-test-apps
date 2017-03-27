@@ -2,7 +2,7 @@
 
 target 'AnalyticsIOSTestApp' do
   # pod 'Analytics', :git => 'https://github.com/segmentio/analytics-ios.git', :branch => 'dev'
-  pod 'Analytics', :path => '../../analytics-ios'
+  pod 'Analytics', '~> 3.6.0'
   pod 'Segment-Mixpanel'
 end
 

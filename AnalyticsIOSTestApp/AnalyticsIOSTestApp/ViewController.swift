@@ -20,6 +20,9 @@ class ViewController: UIViewController {
     
     @IBAction func trackOrderCompleted(_ sender: Any) {
         SEGAnalytics.shared().track("Order Completed")
+        SEGAnalytics.shared().track("Order Cancelled", properties: [
+            "order_id": 323
+        ])
     }
     
     @IBAction func flush(_ sender: Any) {
