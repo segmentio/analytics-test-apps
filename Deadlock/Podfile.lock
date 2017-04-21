@@ -1,0 +1,19 @@
+PODS:
+  - Analytics (3.6.0)
+  - Segment-Taplytics (1.1.0):
+    - Analytics (~> 3.0)
+    - Taplytics (~> 2.13.0)
+  - Taplytics (2.13.1)
+
+DEPENDENCIES:
+  - Analytics
+  - Segment-Taplytics
+
+SPEC CHECKSUMS:
+  Analytics: 15be3e651d22cc811f44df65698538236676437b
+  Segment-Taplytics: 1675cabcdae56767b7e6a27aff5171ed76cfd8e5
+  Taplytics: e09b4e13f18527f27429fc266587f43902a933bb
+
+PODFILE CHECKSUM: 10653efcb95386e0351f0f75923ca0016771882c
+
+COCOAPODS: 1.2.1

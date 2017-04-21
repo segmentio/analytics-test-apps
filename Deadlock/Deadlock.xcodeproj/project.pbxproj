@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4617A58009539AE1FD2501A5 /* libPods-Deadlock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3EA2AA13EBD465A3C85107D /* libPods-Deadlock.a */; };
 		EAB25EEB1EA96463009F8D70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB25EEA1EA96463009F8D70 /* AppDelegate.swift */; };
 		EAB25EED1EA96463009F8D70 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB25EEC1EA96463009F8D70 /* ViewController.swift */; };
 		EAB25EF01EA96463009F8D70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAB25EEE1EA96463009F8D70 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8194EC52B94721592238976E /* Pods-Deadlock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Deadlock.release.xcconfig"; path = "Pods/Target Support Files/Pods-Deadlock/Pods-Deadlock.release.xcconfig"; sourceTree = "<group>"; };
+		B3EA2AA13EBD465A3C85107D /* libPods-Deadlock.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Deadlock.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD7C17B21C0BC9EEABE47DB7 /* Pods-Deadlock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Deadlock.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Deadlock/Pods-Deadlock.debug.xcconfig"; sourceTree = "<group>"; };
 		EAB25EE71EA96463009F8D70 /* Deadlock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Deadlock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAB25EEA1EA96463009F8D70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAB25EEC1EA96463009F8D70 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4617A58009539AE1FD2501A5 /* libPods-Deadlock.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E415783EAC2A45CC3DA2A54 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B3EA2AA13EBD465A3C85107D /* libPods-Deadlock.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		468A065E7228D430B5A8FB71 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BD7C17B21C0BC9EEABE47DB7 /* Pods-Deadlock.debug.xcconfig */,
+				8194EC52B94721592238976E /* Pods-Deadlock.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EAB25EDE1EA96463009F8D70 = {
 			isa = PBXGroup;
 			children = (
 				EAB25EE91EA96463009F8D70 /* Deadlock */,
 				EAB25EE81EA96463009F8D70 /* Products */,
+				468A065E7228D430B5A8FB71 /* Pods */,
+				2E415783EAC2A45CC3DA2A54 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EAB25EF91EA96463009F8D70 /* Build configuration list for PBXNativeTarget "Deadlock" */;
 			buildPhases = (
+				ABB738961B90EA88B6603B16 /* [CP] Check Pods Manifest.lock */,
 				EAB25EE31EA96463009F8D70 /* Sources */,
 				EAB25EE41EA96463009F8D70 /* Frameworks */,
 				EAB25EE51EA96463009F8D70 /* Resources */,
+				F29178F92585992128D89F8E /* [CP] Embed Pods Frameworks */,
+				91CE94BA2F751F58E375EE3B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		91CE94BA2F751F58E375EE3B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Deadlock/Pods-Deadlock-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABB738961B90EA88B6603B16 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F29178F92585992128D89F8E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Deadlock/Pods-Deadlock-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EAB25EE31EA96463009F8D70 /* Sources */ = {
@@ -260,6 +335,7 @@
 		};
 		EAB25EFA1EA96463009F8D70 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD7C17B21C0BC9EEABE47DB7 /* Pods-Deadlock.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Deadlock/Info.plist;
@@ -272,6 +348,7 @@
 		};
 		EAB25EFB1EA96463009F8D70 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8194EC52B94721592238976E /* Pods-Deadlock.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Deadlock/Info.plist;
