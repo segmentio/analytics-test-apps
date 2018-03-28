@@ -15,11 +15,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        let config = SEGAnalyticsConfiguration(writeKey: "H18ZaUENQGcg4t7mJnYt1XrgG5vNkULh")
+        let config = SEGAnalyticsConfiguration(writeKey: "0YrIcHkVrkzOJ8EQ5juMHyPDPEW6GJlE")
         config.trackApplicationLifecycleEvents = true
         config.trackDeepLinks = true
         config.recordScreenViews = true
-        config.use(SEGMixpanelIntegrationFactory.instance())
+        //config.use(SEGAmplitudeIntegrationFactory.instance())
+            // config.use(SEGFirebaseIntegrationFactory.instance())
 
         config.middlewares = [
             turnScreenIntoTrack,
