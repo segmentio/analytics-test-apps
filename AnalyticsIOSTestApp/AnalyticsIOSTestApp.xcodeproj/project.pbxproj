@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		95D6FB0C2072CFB800A0D96B /* SEGFirebaseIntegrationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 95D6FB092072CFB700A0D96B /* SEGFirebaseIntegrationFactory.m */; };
+		95D6FB0D2072CFB800A0D96B /* SEGFirebaseIntegration.m in Sources */ = {isa = PBXBuildFile; fileRef = 95D6FB0A2072CFB700A0D96B /* SEGFirebaseIntegration.m */; };
 		EAEABB991DF2174A002220BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEABB981DF2174A002220BB /* AppDelegate.swift */; };
 		EAEABB9B1DF2174A002220BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEABB9A1DF2174A002220BB /* ViewController.swift */; };
 		EAEABB9E1DF2174A002220BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAEABB9C1DF2174A002220BB /* Main.storyboard */; };
@@ -20,6 +22,10 @@
 /* Begin PBXFileReference section */
 		39DCE8145A74600FF3F4E419 /* Pods-AnalyticsIOSTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnalyticsIOSTestApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnalyticsIOSTestApp/Pods-AnalyticsIOSTestApp.release.xcconfig"; sourceTree = "<group>"; };
 		47B18887D4A71EE1F0B1523B /* libPods-AnalyticsIOSTestApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AnalyticsIOSTestApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		95D6FB082072CFB700A0D96B /* SEGFirebaseIntegrationFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SEGFirebaseIntegrationFactory.h; path = "Pods/Segment-Firebase/Segment-Firebase/Classes/SEGFirebaseIntegrationFactory.h"; sourceTree = "<group>"; };
+		95D6FB092072CFB700A0D96B /* SEGFirebaseIntegrationFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SEGFirebaseIntegrationFactory.m; path = "Pods/Segment-Firebase/Segment-Firebase/Classes/SEGFirebaseIntegrationFactory.m"; sourceTree = "<group>"; };
+		95D6FB0A2072CFB700A0D96B /* SEGFirebaseIntegration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SEGFirebaseIntegration.m; path = "Pods/Segment-Firebase/Segment-Firebase/Classes/SEGFirebaseIntegration.m"; sourceTree = "<group>"; };
+		95D6FB0B2072CFB700A0D96B /* SEGFirebaseIntegration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SEGFirebaseIntegration.h; path = "Pods/Segment-Firebase/Segment-Firebase/Classes/SEGFirebaseIntegration.h"; sourceTree = "<group>"; };
 		EAEABB951DF2174A002220BB /* AnalyticsIOSTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnalyticsIOSTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAEABB981DF2174A002220BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAEABB9A1DF2174A002220BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +62,10 @@
 		EAEABB8C1DF2174A002220BB = {
 			isa = PBXGroup;
 			children = (
+				95D6FB0B2072CFB700A0D96B /* SEGFirebaseIntegration.h */,
+				95D6FB0A2072CFB700A0D96B /* SEGFirebaseIntegration.m */,
+				95D6FB082072CFB700A0D96B /* SEGFirebaseIntegrationFactory.h */,
+				95D6FB092072CFB700A0D96B /* SEGFirebaseIntegrationFactory.m */,
 				EAEABB971DF2174A002220BB /* AnalyticsIOSTestApp */,
 				EAEABB961DF2174A002220BB /* Products */,
 				F0727596FBAA5A000603D4A0 /* Pods */,
@@ -174,13 +184,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AnalyticsIOSTestApp-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		3B6D19378A081033361E90EF /* [CP] Embed Pods Frameworks */ = {
@@ -204,9 +217,28 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AnalyticsIOSTestApp/Pods-AnalyticsIOSTestApp-resources.sh",
+				"${PODS_ROOT}/Mixpanel/Mixpanel/Images/MPArrowLeft.png",
+				"${PODS_ROOT}/Mixpanel/Mixpanel/Images/MPArrowLeft@2x.png",
+				"${PODS_ROOT}/Mixpanel/Mixpanel/Images/MPArrowRight.png",
+				"${PODS_ROOT}/Mixpanel/Mixpanel/Images/MPArrowRight@2x.png",
+				"${PODS_ROOT}/Mixpanel/Mixpanel/Images/MPCheckmark.png",
+				"${PODS_ROOT}/Mixpanel/Mixpanel/Images/MPCheckmark@2x.png",
+				"${PODS_ROOT}/Mixpanel/Mixpanel/Images/MPCloseButton.png",
+				"${PODS_ROOT}/Mixpanel/Mixpanel/Images/MPCloseButton@2x.png",
+				"${PODS_ROOT}/Mixpanel/Mixpanel/Images/MPCloseButton@3x.png",
+				"${PODS_ROOT}/Mixpanel/Mixpanel/Images/MPDismissKeyboard.png",
+				"${PODS_ROOT}/Mixpanel/Mixpanel/Images/MPDismissKeyboard@2x.png",
+				"${PODS_ROOT}/Mixpanel/Mixpanel/Images/MPLogo.png",
+				"${PODS_ROOT}/Mixpanel/Mixpanel/Images/MPLogo@2x.png",
+				"${PODS_ROOT}/Mixpanel/Mixpanel/MPNotification~ipad.storyboard",
+				"${PODS_ROOT}/Mixpanel/Mixpanel/MPNotification~iphonelandscape.storyboard",
+				"${PODS_ROOT}/Mixpanel/Mixpanel/MPNotification~iphoneportrait.storyboard",
+				"${PODS_ROOT}/Mixpanel/Mixpanel/MPSurvey.storyboard",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -221,9 +253,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAEABB9B1DF2174A002220BB /* ViewController.swift in Sources */,
+				95D6FB0C2072CFB800A0D96B /* SEGFirebaseIntegrationFactory.m in Sources */,
 				EAEABBAD1DF23736002220BB /* CustomMiddlewares.swift in Sources */,
 				EAEABB991DF2174A002220BB /* AppDelegate.swift in Sources */,
 				EAEABBAF1DF23BA9002220BB /* Helpers.swift in Sources */,
+				95D6FB0D2072CFB800A0D96B /* SEGFirebaseIntegration.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

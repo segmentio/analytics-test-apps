@@ -1,21 +1,56 @@
 PODS:
-  - Analytics (3.6.0)
-  - Mixpanel (3.0.6):
-    - Mixpanel/Mixpanel (= 3.0.6)
-  - Mixpanel/Mixpanel (3.0.6)
-  - Segment-Mixpanel (1.1.0):
-    - Analytics (~> 3.0)
-    - Mixpanel (~> 3.0)
+  - Analytics (3.6.9)
+  - Firebase (4.11.0):
+    - Firebase/Core (= 4.11.0)
+  - Firebase/Core (4.11.0):
+    - FirebaseAnalytics (= 4.1.0)
+    - FirebaseCore (= 4.0.18)
+  - FirebaseAnalytics (4.1.0):
+    - FirebaseCore (~> 4.0)
+    - FirebaseInstanceID (~> 2.0)
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+    - nanopb (~> 0.3)
+  - FirebaseCore (4.0.18):
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+  - FirebaseInstanceID (2.0.10):
+    - FirebaseCore (~> 4.0)
+  - GoogleToolboxForMac/Defines (2.1.3)
+  - GoogleToolboxForMac/NSData+zlib (2.1.3):
+    - GoogleToolboxForMac/Defines (= 2.1.3)
+  - nanopb (0.3.8):
+    - nanopb/decode (= 0.3.8)
+    - nanopb/encode (= 0.3.8)
+  - nanopb/decode (0.3.8)
+  - nanopb/encode (0.3.8)
+  - Segment-Firebase/StaticLibWorkaround (2.1.0):
+    - Analytics (~> 3.2)
+    - Firebase/Core (~> 4.0)
 
 DEPENDENCIES:
   - Analytics (~> 3.6.0)
-  - Segment-Mixpanel
+  - Firebase
+  - Segment-Firebase/StaticLibWorkaround (from `https://github.com/segment-integrations/analytics-ios-integration-firebase.git`, branch `static-lib-workaround`)
+
+EXTERNAL SOURCES:
+  Segment-Firebase:
+    :branch: static-lib-workaround
+    :git: https://github.com/segment-integrations/analytics-ios-integration-firebase.git
+
+CHECKOUT OPTIONS:
+  Segment-Firebase:
+    :commit: 82d541d5020be0089157f990e4755a08784dbdae
+    :git: https://github.com/segment-integrations/analytics-ios-integration-firebase.git
 
 SPEC CHECKSUMS:
-  Analytics: 15be3e651d22cc811f44df65698538236676437b
-  Mixpanel: c462992e6fe84d74a8d0408c0b25852ddd067e4b
-  Segment-Mixpanel: 8e9f449c86d929f0e7abb2e89c760e65f5182d6e
+  Analytics: 6541ce337e99d9f7a2240a8b3953940a7be5f998
+  Firebase: cc13dfab1038c8b45d7903e01fc690451d6d0b24
+  FirebaseAnalytics: 3dfae28d4a5e06f86c4fae830efc2ad3fadb19bc
+  FirebaseCore: b981f47e5254cbcfdeb483355300d743f6fcab2c
+  FirebaseInstanceID: 8d20d890d65c917f9f7d9950b6e10a760ad34321
+  GoogleToolboxForMac: 2501e2ad72a52eb3dfe7bd9aee7dad11b858bd20
+  nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  Segment-Firebase: bfd7cd59a726d59615aadd7cfb46b6974047124d
 
-PODFILE CHECKSUM: b13b9fc1900f75b7695f3960a7f608271bd8ae56
+PODFILE CHECKSUM: eb9b75834d8df6c5de9a2c6abd0326bc961c32fd
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.3.1
