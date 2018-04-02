@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Analytics
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
