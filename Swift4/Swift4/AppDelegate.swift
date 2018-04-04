@@ -20,6 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         config.trackApplicationLifecycleEvents = true
         config.trackDeepLinks = true
         config.recordScreenViews = true
+        config.use(SEGFirebaseIntegrationFactory.instance())
         SEGAnalytics.setup(with: config)
         SEGAnalytics.debug(true)
         

@@ -3,3 +3,4 @@
 //
 
 #import <Analytics/SEGAnalytics.h>
+#import "SEGFirebaseIntegrationFactory.h"

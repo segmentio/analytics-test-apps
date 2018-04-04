@@ -13,6 +13,8 @@
 		EAD6375D20754A7A00468DE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAD6375B20754A7A00468DE4 /* Main.storyboard */; };
 		EAD6375F20754A7B00468DE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAD6375E20754A7B00468DE4 /* Assets.xcassets */; };
 		EAD6376220754A7B00468DE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAD6376020754A7B00468DE4 /* LaunchScreen.storyboard */; };
+		EAD6377020754D0900468DE4 /* SEGFirebaseIntegration.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD6376C20754D0800468DE4 /* SEGFirebaseIntegration.m */; };
+		EAD6377120754D0900468DE4 /* SEGFirebaseIntegrationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD6376F20754D0900468DE4 /* SEGFirebaseIntegrationFactory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,10 @@
 		EAD6376120754A7B00468DE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EAD6376320754A7B00468DE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EAD6376920754B0600468DE4 /* Swift4-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Swift4-Bridging-Header.h"; sourceTree = "<group>"; };
+		EAD6376C20754D0800468DE4 /* SEGFirebaseIntegration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SEGFirebaseIntegration.m; path = "Pods/Segment-Firebase/Segment-Firebase/Classes/SEGFirebaseIntegration.m"; sourceTree = "<group>"; };
+		EAD6376D20754D0800468DE4 /* SEGFirebaseIntegrationFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SEGFirebaseIntegrationFactory.h; path = "Pods/Segment-Firebase/Segment-Firebase/Classes/SEGFirebaseIntegrationFactory.h"; sourceTree = "<group>"; };
+		EAD6376E20754D0800468DE4 /* SEGFirebaseIntegration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SEGFirebaseIntegration.h; path = "Pods/Segment-Firebase/Segment-Firebase/Classes/SEGFirebaseIntegration.h"; sourceTree = "<group>"; };
+		EAD6376F20754D0900468DE4 /* SEGFirebaseIntegrationFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SEGFirebaseIntegrationFactory.m; path = "Pods/Segment-Firebase/Segment-Firebase/Classes/SEGFirebaseIntegrationFactory.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +67,10 @@
 		EAD6374B20754A7A00468DE4 = {
 			isa = PBXGroup;
 			children = (
+				EAD6376E20754D0800468DE4 /* SEGFirebaseIntegration.h */,
+				EAD6376C20754D0800468DE4 /* SEGFirebaseIntegration.m */,
+				EAD6376D20754D0800468DE4 /* SEGFirebaseIntegrationFactory.h */,
+				EAD6376F20754D0900468DE4 /* SEGFirebaseIntegrationFactory.m */,
 				EAD6375620754A7A00468DE4 /* Swift4 */,
 				EAD6375520754A7A00468DE4 /* Products */,
 				CBF059B83E426E0CF5C1A2D8 /* Pods */,
@@ -210,6 +220,8 @@
 			files = (
 				EAD6375A20754A7A00468DE4 /* ViewController.swift in Sources */,
 				EAD6375820754A7A00468DE4 /* AppDelegate.swift in Sources */,
+				EAD6377120754D0900468DE4 /* SEGFirebaseIntegrationFactory.m in Sources */,
+				EAD6377020754D0900468DE4 /* SEGFirebaseIntegration.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
