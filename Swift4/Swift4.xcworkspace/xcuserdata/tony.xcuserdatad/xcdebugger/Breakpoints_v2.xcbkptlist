@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Swift4/AppDelegate.swift"
+            timestampString = "544557998.8066159"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "AppDelegate"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Swift4.AppDelegate.__deallocating_deinit"
+                  moduleName = "Swift4"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tony/dev/src/github.com/segmentio/analytics-test-apps/Swift4/Swift4/AppDelegate.swift"
+                  timestampString = "544558003.162184"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Swift4.AppDelegate.__allocating_init() -&gt; Swift4.AppDelegate"
+                  moduleName = "Swift4"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tony/dev/src/github.com/segmentio/analytics-test-apps/Swift4/Swift4/AppDelegate.swift"
+                  timestampString = "544558003.170418"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Swift4.AppDelegate.init() -&gt; Swift4.AppDelegate"
+                  moduleName = "Swift4"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tony/dev/src/github.com/segmentio/analytics-test-apps/Swift4/Swift4/AppDelegate.swift"
+                  timestampString = "544558003.174562"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "Swift4"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tony/dev/src/github.com/segmentio/analytics-test-apps/Swift4/Swift4/AppDelegate.swift"
+                  timestampString = "544558003.177319"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
