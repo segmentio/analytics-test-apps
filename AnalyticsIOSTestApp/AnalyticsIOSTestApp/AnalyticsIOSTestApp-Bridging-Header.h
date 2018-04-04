@@ -5,4 +5,5 @@
 #import <Analytics/SEGAnalytics.h>
 #import <Analytics/SEGAnalyticsConfiguration.h>
 #import <Analytics/SEGMiddleware.h>
-#import <Segment-Mixpanel/SEGMixpanelIntegrationFactory.h>
+#import <Segment-Firebase/SEGFirebaseIntegrationFactory.h>
+

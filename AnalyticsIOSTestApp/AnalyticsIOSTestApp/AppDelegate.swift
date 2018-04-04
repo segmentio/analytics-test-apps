@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         config.trackApplicationLifecycleEvents = true
         config.trackDeepLinks = true
         config.recordScreenViews = true
-        config.use(SEGMixpanelIntegrationFactory.instance())
+        config.use(SEGFirebaseIntegrationFactory.instance())
 
         config.middlewares = [
             turnScreenIntoTrack,
