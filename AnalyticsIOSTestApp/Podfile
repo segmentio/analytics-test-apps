@@ -1,4 +1,4 @@
- use_frameworks!
+# use_frameworks!
 
 target 'AnalyticsIOSTestApp' do
   # pod 'Analytics', :git => 'https://github.com/segmentio/analytics-ios.git', :branch => 'dev'

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4AE268421F3C5BBBC7096C14 /* Pods_AnalyticsIOSTestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAC3D34D889E40597DEBA6F8 /* Pods_AnalyticsIOSTestApp.framework */; };
+		C8629578FEBA6D78537110D2 /* libPods-AnalyticsIOSTestApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 61A73D865316D037338216E9 /* libPods-AnalyticsIOSTestApp.a */; };
 		EAEABB991DF2174A002220BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEABB981DF2174A002220BB /* AppDelegate.swift */; };
 		EAEABB9B1DF2174A002220BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEABB9A1DF2174A002220BB /* ViewController.swift */; };
 		EAEABB9E1DF2174A002220BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAEABB9C1DF2174A002220BB /* Main.storyboard */; };
@@ -19,7 +19,7 @@
 
 /* Begin PBXFileReference section */
 		39DCE8145A74600FF3F4E419 /* Pods-AnalyticsIOSTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnalyticsIOSTestApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnalyticsIOSTestApp/Pods-AnalyticsIOSTestApp.release.xcconfig"; sourceTree = "<group>"; };
-		CAC3D34D889E40597DEBA6F8 /* Pods_AnalyticsIOSTestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnalyticsIOSTestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		61A73D865316D037338216E9 /* libPods-AnalyticsIOSTestApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AnalyticsIOSTestApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAEABB951DF2174A002220BB /* AnalyticsIOSTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnalyticsIOSTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAEABB981DF2174A002220BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAEABB9A1DF2174A002220BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,7 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AE268421F3C5BBBC7096C14 /* Pods_AnalyticsIOSTestApp.framework in Frameworks */,
+				C8629578FEBA6D78537110D2 /* libPods-AnalyticsIOSTestApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,7 +48,7 @@
 		1229E2F8AEA39B89BC26884D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CAC3D34D889E40597DEBA6F8 /* Pods_AnalyticsIOSTestApp.framework */,
+				61A73D865316D037338216E9 /* libPods-AnalyticsIOSTestApp.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
