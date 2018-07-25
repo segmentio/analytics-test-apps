@@ -1,8 +1,8 @@
-# use_frameworks!
+use_frameworks!
 
 target 'AnalyticsIOSTestApp' do
   # pod 'Analytics', :git => 'https://github.com/segmentio/analytics-ios.git', :branch => 'dev'
-  pod 'Analytics', '~> 3.6.0'
+  pod 'Analytics'
   pod 'Segment-Mixpanel'
 end
 
