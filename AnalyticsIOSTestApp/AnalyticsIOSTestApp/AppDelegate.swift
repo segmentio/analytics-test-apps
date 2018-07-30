@@ -8,6 +8,9 @@
 
 import UIKit
 
+import Analytics
+import Segment_Mixpanel
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 

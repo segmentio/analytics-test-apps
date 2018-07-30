@@ -1,21 +1,25 @@
 PODS:
   - Analytics (3.6.0)
-  - Mixpanel (3.0.6):
-    - Mixpanel/Mixpanel (= 3.0.6)
-  - Mixpanel/Mixpanel (3.0.6)
-  - Segment-Mixpanel (1.1.0):
+  - Mixpanel (3.3.3)
+  - Segment-Mixpanel (1.3.0):
     - Analytics (~> 3.0)
     - Mixpanel (~> 3.0)
 
 DEPENDENCIES:
-  - Analytics (~> 3.6.0)
+  - Analytics
   - Segment-Mixpanel
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Analytics
+    - Mixpanel
+    - Segment-Mixpanel
 
 SPEC CHECKSUMS:
   Analytics: 15be3e651d22cc811f44df65698538236676437b
-  Mixpanel: c462992e6fe84d74a8d0408c0b25852ddd067e4b
-  Segment-Mixpanel: 8e9f449c86d929f0e7abb2e89c760e65f5182d6e
+  Mixpanel: 3c3925c27f7a321d5978319a72f53f8f0885afc5
+  Segment-Mixpanel: edded29dfc288e62f0fae20c9b42a3c50d0639b9
 
-PODFILE CHECKSUM: b13b9fc1900f75b7695f3960a7f608271bd8ae56
+PODFILE CHECKSUM: f447d8802a038999e90e6da7dedf9379c332ffdc
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.5.3

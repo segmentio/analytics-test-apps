@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Analytics
 
 // Changing event names and adding custom attributes
 let customizeAllTrackCalls = SEGBlockMiddleware { (context, next) in
