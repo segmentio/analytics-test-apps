@@ -35,13 +35,78 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         let configURL = URL(string: "http://0.0.0.0:8000/configuration.json")
-        let configuration = SEGAnalyticsConfiguration(writeKey: "lAtKCqFrmtnhIVV7LDPTrgoCbL0ujlBe")//, configurationURL: configURL)
-        configuration.trackApplicationLifecycleEvents = true
+        let configuration = SEGAnalyticsConfiguration(writeKey: "3VxTfPsVOoEOSbbzzbFqVNcYMNu2vjnr")//, configurationURL: configURL)
+        configuration.trackApplicationLifecycleEvents = false
         configuration.recordScreenViews = true
-        configuration.flushAt = 1
+        //configuration.flushAt = 1
+        configuration.experimental.nanosecondTimestamps = true
         
-        configuration.use(SEGSegmentIntegrationFactory())
-        configuration.use(SEGMixpanelIntegrationFactory())
+        let segmentIntegration = SEGSegmentIntegrationFactory()
+        let mixpanelIntegration = SEGMixpanelIntegrationFactory()
+        
+        configuration.use(mixpanelIntegration)
+        
+        let customizeSegmentTrackCalls = SEGBlockMiddleware { (context, next) in
+          if context.eventType == .track {
+            next(context.modify { ctx in
+              guard let track = ctx.payload as? SEGTrackPayload else {
+                return
+              }
+              let newEvent = "[Segment] \(track.event)"
+              var newProps = track.properties ?? [:]
+              newProps["customAttribute"] = "Bacon"
+              ctx.payload = SEGTrackPayload(
+                event: newEvent,
+                properties: newProps,
+                context: track.context,
+                integrations: track.integrations
+              )
+            })
+          } else {
+            next(context)
+          }
+        }
+
+        let customizeMixpanelTrackCalls = SEGBlockMiddleware { (context, next) in
+          if context.eventType == .track {
+            next(context.modify { ctx in
+              guard let track = ctx.payload as? SEGTrackPayload else {
+                return
+              }
+              let newEvent = "[Mixpanel] \(track.event)"
+              var newProps = track.properties ?? [:]
+              newProps["customAttribute"] = "Sausage"
+              ctx.payload = SEGTrackPayload(
+                event: newEvent,
+                properties: newProps,
+                context: track.context,
+                integrations: track.integrations
+              )
+            })
+          } else {
+            next(context)
+          }
+        }
+        
+        configuration.sourceMiddleware = [dropAppLifecycleStuff];
+        
+        configuration.integrationMiddleware = [
+            SEGIntegrationMiddleware(key: segmentIntegration.key(), middleware: [customizeSegmentTrackCalls]),
+            SEGIntegrationMiddleware(key: mixpanelIntegration.key(), middleware: [customizeMixpanelTrackCalls])
+        ]
+        
+        configuration.experimental.rawSegmentModificationBlock = { (payload: [AnyHashable: Any]) -> [AnyHashable: Any] in
+            print(payload)
+            
+            var newPayload = payload
+            if var context = newPayload["context"] as? [String: Any] {
+                context["myValue"] = "chocolate"
+                newPayload["context"] = context
+            }
+            
+            return newPayload
+        }
+        
         /*
         configuration.use(integration: SEGSegmentIntegration.self)
         configuration.use(integration: SEGMixpanelIntegration.self)
@@ -57,9 +122,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         configuration.middlewares = [SampleMiddleware()]*/
         
         SEGAnalytics.setup(with: configuration)
+        SEGAnalytics.shared()?.identify("brandon")
+
+        /*DispatchQueue.main.async {
+            SEGAnalytics.shared()?.identify(nil, traits: ["email": "test@test.com"])
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime(uptimeNanoseconds: 1000000000)) { // 1-second
+                SEGAnalytics.shared()?.identify(nil, traits: ["hakuna": "matata"])
+            }
+        }*/
         
-        SEGAnalytics.shared()?.track("AppColdLaunch", properties: ["removeMe": true, "dontRemoveMe": true])
+        SEGAnalytics.shared()?.identify("brandon")
+        SEGAnalytics.shared()?.track("test0")
+        SEGAnalytics.shared()?.group("MyGroup")
+        SEGAnalytics.shared()?.track("test1")
+        SEGAnalytics.shared()?.track("test2")
+        SEGAnalytics.shared()?.track("test3")
         
+        SEGAnalytics.shared()?.flush()
+
         return true
     }
 
